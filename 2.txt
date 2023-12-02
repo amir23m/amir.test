@@ -1,3 +1,7 @@
 with text “this is file 2.txt
+<<<<<<< HEAD
 one more line from local
+=======
+one more line from remote repo
+>>>>>>> 627db1d1247139a48117d293b4525f460fd23d6b
 
