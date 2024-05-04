@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Sequence" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="778,2553" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Sequence" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="778,2243" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -100,7 +100,7 @@
       <AssemblyReference>System.Linq.Expressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Sequence" sap:VirtualizedContainerService.HintSize="788,2488" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Sequence" sap:VirtualizedContainerService.HintSize="788,2178" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="formdate" />
       <Variable x:TypeArguments="x:String" Name="todata" />
@@ -151,13 +151,13 @@
         </scg:List>
       </ui:MultipleAssign.AssignOperations>
     </ui:MultipleAssign>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Agoda Official Site | Free Cancellation &amp; Booking Deals | Over 2 Million Hotels" sap:VirtualizedContainerService.HintSize="726,2151" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsIncognito="False" OpenMode="Always" ScopeGuid="e071a50b-1350-48cd-bf4d-6d9342f8b90c" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Agoda Official Site | Free Cancellation &amp; Booking Deals | Over 2 Million Hotels" sap:VirtualizedContainerService.HintSize="726,1841" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsIncognito="False" OpenMode="Always" ScopeGuid="e071a50b-1350-48cd-bf4d-6d9342f8b90c" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="692,1911" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="692,1601" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -173,15 +173,6 @@
                 <uix:TargetAnchorable BrowserURL="https://www.agoda.com/?cid=1844104&amp;ds=S3L%2BNXVHL8oaunRL" DesignTimeRectangle="446, 459, 1028, 72" DesignTimeScaleFactor="1" ElementType="ListItem" FullSelectorArgument="&lt;webctrl aria-role='option' tag='LI' idx='1' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='option' tag='LI' type='' class='Suggestion Suggestion__categoryName' aaname='' check:innerText='Top destination&amp;#xD;&amp;#xA;New York (NY)&amp;#xD;&amp;#xA;United States&amp;#xD;&amp;#xA;Popular&amp;#xD;&amp;#xA;City' /&gt;" Guid="53f1625d-dca6-49ed-b931-e472627d554c" InformativeScreenshot="6b936ce546e2299423079ec2d126726e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Agoda Official Site | Free Cancellation &amp;amp; Booking Deals | Over 2 Million Hotels' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive" />
               </uix:NClick.Target>
             </uix:NClick>
-            <Sequence DisplayName="Sequence" sap:VirtualizedContainerService.HintSize="630,65" sap2010:WorkflowViewState.IdRef="Sequence_8">
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-              <Delay DisplayName=" Delay 3 seconds" Duration="00:00:03" sap:VirtualizedContainerService.HintSize="388,115" sap2010:WorkflowViewState.IdRef="Delay_1" />
-            </Sequence>
             <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '20'" sap:VirtualizedContainerService.HintSize="630,197" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e071a50b-1350-48cd-bf4d-6d9342f8b90c" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.agoda.com/?cid=1844104&amp;ds=S3L%2BNXVHL8oaunRL" CvTextArea="489, 723, 19, 15" CvTextArgument="20" CvType="Text" DesignTimeRectangle="988, 721, 18, 23" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="[string.Format(&quot;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div' innertext='* {0} *' /&gt;&lt;webctrl parentid='SearchBoxContainer' innertext='* {1} *' class='PriceSurgePicker-Day__circle PriceSurgePicker-Day__circle--wide' idx='1' /&gt;&quot;, frommonth, fromday)]" FuzzySelectorArgument="&lt;webctrl aaname='20' parentid='SearchBoxContainer' tag='SPAN' type='' class='PriceSurgePicker-Day__label PriceSurgePicker-Day__label--wide' check:innerText='20' /&gt;" Guid="fffbc947-fe6a-4169-a906-149e2e77966f" InformativeScreenshot="67fed75c6fff9b58fc2f2cc42104fdc0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Agoda Official Site | Free Cancellation &amp;amp; Booking Deals | Over 2 Million Hotels' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
@@ -193,14 +184,6 @@
                 </uix:TargetAnchorable>
               </uix:NClick.Target>
             </uix:NClick>
-            <Sequence DisplayName="Sequence" sap:VirtualizedContainerService.HintSize="630,245" sap2010:WorkflowViewState.IdRef="Sequence_9">
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-              <Delay DisplayName=" Delay 3 seconds" Duration="00:00:03" sap:VirtualizedContainerService.HintSize="388,115" sap2010:WorkflowViewState.IdRef="Delay_2" />
-            </Sequence>
             <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[retrynextmoth]" DisplayName="While" sap:VirtualizedContainerService.HintSize="630,862" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_2">
               <ui:InterruptibleWhile.Body>
                 <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="596,723" sap2010:WorkflowViewState.IdRef="Sequence_6">
