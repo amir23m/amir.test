@@ -1,0 +1,273 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Sequence" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="778,2553" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Sequence" sap:VirtualizedContainerService.HintSize="788,2488" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="formdate" />
+      <Variable x:TypeArguments="x:String" Name="todata" />
+      <Variable x:TypeArguments="x:String" Name="fromday" />
+      <Variable x:TypeArguments="x:String" Name="frommonth" />
+      <Variable x:TypeArguments="x:Boolean" Default="True" Name="retrynextmoth" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="726,249" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+      <ui:MultipleAssign.AssignOperations>
+        <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">[formdate]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">20 May 2024</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">[fromday]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">[formdate.Split(" "c)(0)]</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">[frommonth]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">[formdate.Split(" "c)(1)]</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">[todata]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">20 June 2024</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+        </scg:List>
+      </ui:MultipleAssign.AssignOperations>
+    </ui:MultipleAssign>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Agoda Official Site | Free Cancellation &amp; Booking Deals | Over 2 Million Hotels" sap:VirtualizedContainerService.HintSize="726,2151" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsIncognito="False" OpenMode="Always" ScopeGuid="e071a50b-1350-48cd-bf4d-6d9342f8b90c" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="692,1911" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DeselectAfter="False" DisplayName="Type Into 'DIV'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="630,258" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="DebuggerApi" ScopeIdentifier="e071a50b-1350-48cd-bf4d-6d9342f8b90c" Text="new york" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.agoda.com/?cid=1844104&amp;ds=S3L%2BNXVHL8oaunRL" CvTextArea="513, 352, 216, 18" CvTextArgument="Enter a destination or property" CvType="Text" DesignTimeRectangle="447, 388, 1026, 51" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl parentid='autocomplete-box' tag='input' class='SearchBoxTextEditor SearchBoxTextEditor--autocomplete' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='autocomplete-box' tag='DIV' type='' class='Box-sc-kv6pi1-0 hRUYUu IconBox__wrapper' aaname='' /&gt;" Guid="b2bee824-34fd-40e2-90c8-8f3cc96d177b" InformativeScreenshot="b1d285ad00f29225bba9c1434a874a07.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Agoda Official Site | Free Cancellation &amp;amp; Booking Deals | Over 2 Million Hotels' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Top destinationNew'" sap:VirtualizedContainerService.HintSize="630,197" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e071a50b-1350-48cd-bf4d-6d9342f8b90c" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.agoda.com/?cid=1844104&amp;ds=S3L%2BNXVHL8oaunRL" DesignTimeRectangle="446, 459, 1028, 72" DesignTimeScaleFactor="1" ElementType="ListItem" FullSelectorArgument="&lt;webctrl aria-role='option' tag='LI' idx='1' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='option' tag='LI' type='' class='Suggestion Suggestion__categoryName' aaname='' check:innerText='Top destination&amp;#xD;&amp;#xA;New York (NY)&amp;#xD;&amp;#xA;United States&amp;#xD;&amp;#xA;Popular&amp;#xD;&amp;#xA;City' /&gt;" Guid="53f1625d-dca6-49ed-b931-e472627d554c" InformativeScreenshot="6b936ce546e2299423079ec2d126726e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Agoda Official Site | Free Cancellation &amp;amp; Booking Deals | Over 2 Million Hotels' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <Sequence DisplayName="Sequence" sap:VirtualizedContainerService.HintSize="630,65" sap2010:WorkflowViewState.IdRef="Sequence_8">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Delay DisplayName=" Delay 3 seconds" Duration="00:00:03" sap:VirtualizedContainerService.HintSize="388,115" sap2010:WorkflowViewState.IdRef="Delay_1" />
+            </Sequence>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '20'" sap:VirtualizedContainerService.HintSize="630,197" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e071a50b-1350-48cd-bf4d-6d9342f8b90c" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.agoda.com/?cid=1844104&amp;ds=S3L%2BNXVHL8oaunRL" CvTextArea="489, 723, 19, 15" CvTextArgument="20" CvType="Text" DesignTimeRectangle="988, 721, 18, 23" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="[string.Format(&quot;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div' innertext='* {0} *' /&gt;&lt;webctrl parentid='SearchBoxContainer' innertext='* {1} *' class='PriceSurgePicker-Day__circle PriceSurgePicker-Day__circle--wide' idx='1' /&gt;&quot;, frommonth, fromday)]" FuzzySelectorArgument="&lt;webctrl aaname='20' parentid='SearchBoxContainer' tag='SPAN' type='' class='PriceSurgePicker-Day__label PriceSurgePicker-Day__label--wide' check:innerText='20' /&gt;" Guid="fffbc947-fe6a-4169-a906-149e2e77966f" InformativeScreenshot="67fed75c6fff9b58fc2f2cc42104fdc0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Agoda Official Site | Free Cancellation &amp;amp; Booking Deals | Over 2 Million Hotels' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArea="489, 723, 19, 15" CvTextArgument="20" CvType="Text" DesignTimeRectangle="978, 714, 38, 38" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='20' parentid='SearchBoxContainer' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='PriceSurgePicker-Day__circle PriceSurgePicker-Day__circle--wide' parentid='SearchBoxContainer' tag='DIV' aaname='' check:innerText='20' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <Sequence DisplayName="Sequence" sap:VirtualizedContainerService.HintSize="630,245" sap2010:WorkflowViewState.IdRef="Sequence_9">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Delay DisplayName=" Delay 3 seconds" Duration="00:00:03" sap:VirtualizedContainerService.HintSize="388,115" sap2010:WorkflowViewState.IdRef="Delay_2" />
+            </Sequence>
+            <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[retrynextmoth]" DisplayName="While" sap:VirtualizedContainerService.HintSize="630,862" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_2">
+              <ui:InterruptibleWhile.Body>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="596,723" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="534,638" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                    <TryCatch.Try>
+                      <Sequence sap:VirtualizedContainerService.HintSize="496,387" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '21'" sap:VirtualizedContainerService.HintSize="434,197" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e071a50b-1350-48cd-bf4d-6d9342f8b90c" Timeout="3000" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://www.agoda.com/" CvTextArea="1035, 723, 18, 15" CvTextArgument="21" CvType="Text" DesignTimeRectangle="1036, 721, 18, 23" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='SearchBoxContainer' tabindex='0' tag='DIV' innertext='*June*' /&gt;&lt;webctrl aaname='21' parentid='SearchBoxContainer' tag='SPAN' innertext='21' idx='2' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='21' type='' parentid='SearchBoxContainer' tag='SPAN' class='PriceSurgePicker-Day__label PriceSurgePicker-Day__label--wide' check:innerText='21' /&gt;" Guid="2ec9ba42-4cbc-4c47-8c8f-a89f6ca70be7" InformativeScreenshot="624c4b2b173982d467bacc288608641b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Agoda Official Site | Free Cancellation &amp;amp; Booking Deals | Over 2 Million Hotels' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CvTextArea="1035, 723, 18, 15" CvTextArgument="21" CvType="Text" DesignTimeRectangle="1021, 714, 48, 38" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='52' parentid='SearchBoxContainer' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='PriceSurgePicker-Day__circle PriceSurgePicker-Day__circle--wide' parentid='SearchBoxContainer' tag='DIV' aaname='' check:innerText='21' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                        <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_2">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:Boolean">[retrynextmoth]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </Sequence>
+                    </TryCatch.Try>
+                    <TryCatch.Catches>
+                      <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="500,22" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ActivityAction x:TypeArguments="s:Exception">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                          </ActivityAction.Argument>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e071a50b-1350-48cd-bf4d-6d9342f8b90c" Version="V3">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.agoda.com/?cid=1844104&amp;ds=S3L%2BNXVHL8oaunRL" CvElementArea="1151, 500, 23, 29" CvType="ArrowButton" DesignTimeRectangle="1141, 493, 44, 44" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;html app='chrome.exe' title='Agoda Official Site | Free Cancellation &amp;amp; Booking Deals | Over 2 Million Hotels' idx='2' /&gt;&lt;webctrl aria-label='Next Month' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Next Month' tag='BUTTON' type='button' class='a5bf9-box a5bf9-bg-neutral-alpha-transparent a5bf9-fill-primary-interactive a5bf9-text-primary-interactive a5bf9-items-center a5bf9-cursor-pointer a5bf9-flex a5bf9-flex-col a5bf9-justify-center a5bf9--m-m a5bf9-px-m a5bf9-py-m  a5bf9-rounded-max a5bf9-border-none  a5bf9-interactive  ' aaname='' /&gt;" Guid="54d5a860-53e2-42e9-8703-393a81580fa0" InformativeScreenshot="537974d3cda0c0af4ada90f68c47387e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Agoda Official Site | Free Cancellation &amp;amp; Booking Deals | Over 2 Million Hotels' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                        </ActivityAction>
+                      </Catch>
+                    </TryCatch.Catches>
+                  </TryCatch>
+                </Sequence>
+              </ui:InterruptibleWhile.Body>
+            </ui:InterruptibleWhile>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-1928, -8, 1936, 1056" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANHSURBVGhD7ZpPaxNBGMaDn8CLn8BP4MFz9eJVvAiWCoIFPWi8eMitjT3W4EEk6KW24B80UKnQqKBpSA9iqBJKK0WhEbSBaIixRk3N9nWfcSdsZmezM5vs2rV94KGbmc3O+3vnncku3RgXESVNN0zvdCHGpBU2C3y/6RJ6IqYSB0Dmo6okAKJQNm5qACDS2gOAms0m5fN5uppK0cV4nE4NDzt8ZWKC5rNZqlar1rcGo74AEHgmk6Gzo6PSoN2cTqcHBuIboFwuu2Zb1ZiRfuULAOWim3U3Yzb6kTYAMi8LhDuRSLCyQnYBimOsDdm53P1AaAGg5t0yj0Xaq675epF9Fy4Wi9aZetICQKZkg+vUMmZQlgS0AVJXygDIrjgo7GchukFghnSlDDA9M+MYEGXjVwAXr4ddTVfKALItc2V11er1J9k1MTs6UgJAbYoD+cmWKNms6pakEgAyLQ6ErbFfYecRr6u7DnwD+FlwogZx3d0LEKkSCnMRBwIAhbWNBgYQxg8ZHBhAGLcScGAAkNttMW6bVdUreDhQAMyC2+CAU7mdtn8fzw4oQ/t1AgWAZFuf3fyBBudhkeMYt+EycPTjfHtb4AAQSsY+qB/zpzCxPRQACBnuVcu9jKyjpLAexL7QACAE4faU5mZsx1yh3Up4CYsX26m4ILnxgwVQcZHLtmbMrI4GAiAKM4PsqvxSo4wAh11MN3goEIAwtQfwr7U7AH7cmqLGuThza6FgtZra+krG0mkyXh4no3SBfeZ6tPGKjhbGmXHM1dps0eJkjp5cnqMXY0/ZZ67Zj00ael5hHluuW6295Qnw63GWaoeHumxsVFgfAm/PH+gYMNDC5xXaN3uyy2iDEPT0sZsdAwRa//6bYvfXuwwgL3kCIPsiwM+7D1mfPXhuaPztAwcA2iB78NzQtbWGA0BlFjwBEKwI0F57x/rauUNdwRuFI6z99oecAwBt0Nz5TFfwmZE7rP1NveUAAJSXPAG2v22y2ufBN1PXrR6zr7ZI7WcH/wKYf7cby1YP0ZmlG53gccxVe/+F7p2YYsHjb6X0yeohuvS61gke66C+ZVg97lJaxDtZ/wVA5P/RHe1XDaz3JaL7sgeX2RDB121isT+3QHI5qGEW4gAAAABJRU5ErkJggg==" InformativeScreenshot="ffee5d67b2bbdb28b4d20534ee292b3e.jpg" Selector="&lt;html app='chrome.exe' title='Agoda Official Site *' /&gt;" Title="Booking.com | האתר הרשמי | הטובים ביותר: מלונות, טיסות, רכבים להשכרה ומקומות אירוח" Url="https://www.agoda.com/?cid=1844104&amp;ds=S3L%2BNXVHL8oaunRL" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
